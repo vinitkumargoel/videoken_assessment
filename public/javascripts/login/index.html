@@ -1,0 +1,35 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Videoken</a>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div style="margin-top: 50px">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <div class="alert alert-danger" role="alert" ng-if="error">{{error}}</div>
+        <form ng-submit="login()">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" ng-model="username" id="exampleInputEmail1" placeholder="Email"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" ng-model="password" id="exampleInputPassword1"
+                       placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
