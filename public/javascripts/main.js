@@ -27,7 +27,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
 app.run(function ($rootScope) {
     $rootScope.playlist = [
-        {"video": "IHS_D3M-Nk0", "start": "100", "end": "120", "title": "Jatt and Juliet 2"},
-        {"video": "oKRps5Fwr80", "start": "200", "end": "210", "title": "Jatt and Juliet "}
+
     ];
 })

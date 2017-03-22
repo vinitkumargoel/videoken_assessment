@@ -11,15 +11,19 @@ app.controller("playlistPlayController", function ($scope, $sce, $timeout, $root
         return $sce.trustAsResourceUrl(src);
     };
 
-    $scope.currentVideo = "https://www.youtube.com/embed/" + $scope.videos[counter].video + "?autoplay=1&start=" + $scope.videos[counter].start + "&end=" +
-        $scope.videos[counter].end;
+    if ($scope.videos.length != 0) {
+        $scope.currentVideo = "https://www.youtube.com/embed/" + $scope.videos[counter].video + "?autoplay=1&start=" + $scope.videos[counter].start + "&end=" +
+            $scope.videos[counter].end;
+    }
+
 
     $scope.nextVideo = function () {
 
         counter = +1;
-
-        $scope.currentVideo = "https://www.youtube.com/embed/" + $scope.videos[counter].video + "?autoplay=1&start=" + $scope.videos[counter].start + "&end=" +
-            $scope.videos[counter].end;
+        if ($scope.videos.length != counter) {
+            $scope.currentVideo = "https://www.youtube.com/embed/" + $scope.videos[counter].video + "?autoplay=1&start=" + $scope.videos[counter].start + "&end=" +
+                $scope.videos[counter].end;
+        }
 
     }
 
