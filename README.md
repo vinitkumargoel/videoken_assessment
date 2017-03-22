@@ -5,7 +5,6 @@
 git clone https://github.com/vinitkumargoel/videoken_assessment/
 
 npm install
-
 ```
 
 **Start Project**
@@ -23,6 +22,13 @@ email: user@123.com
 password: admin123
 ```
 
+**Project Url**
+
+```
+http://localhost:3000/login
+```
+
+
 **Add Video in Playlist**
 
 ```
@@ -30,3 +36,4 @@ Click on Add Playlist tab on header
 Then click on New button 
 Fill details 
 ```
+

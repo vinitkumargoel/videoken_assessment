@@ -20,6 +20,15 @@
     </div>
     </div>
 </nav>
+
+<div ng-if="videos.length == 0">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+        <h1 style="opacity: 0.5">**No Video in playlist, Add New Video**</h1>
+    </div>
+    <div class="col-lg-2"></div>
+</div>
+
 <div>
     <div class="col-lg-1"></div>
     <div class="col-lg-3">
@@ -32,7 +41,7 @@
                     <img src="https://img.youtube.com/vi/{{x.video}}/default.jpg" alt="" style="width: 100%">
                 </div>
                 <div class="col-lg-6">
-                    {{x.title | limitTo: 20}}
+                    {{x.title | limitTo: 30}}<br>
                     {{x.start}} - {{x.end}}
                 </div>
             </div>
